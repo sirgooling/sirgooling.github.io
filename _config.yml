@@ -1,186 +1,302 @@
-# The Site Configuration
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
 
-# Import the theme
-theme: jekyll-theme-chirpy
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
-lang: ko-KR
+# theme                  : "minimal-mistakes-jekyll"
+remote_theme: 'mmistakes/minimal-mistakes'
+minimal_mistakes_skin: 'default' # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Seoul
-
-# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-
-title: 서구링
-tagline: crypto
-description: >-
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://sirgooling.github.io"
-
-github:
-  username: sirgooling
-
-twitter:
-  username: cowoojin
-
-social:
-  name: sirgooling
-  email: solkha56@gmail.com
-  links:
-    - https://github.com/sirgooling
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
-
-# Site Verification Settings
-webmaster_verifications:
-  google: # fill in your Google verification code
-  bing: # fill in your Bing verification code
-  alexa: # fill in your Alexa verification code
-  yandex: # fill in your Yandex verification code
-  baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
-
-# Web Analytics Settings
-analytics:
-  google:
-    id: # fill in your Google Analytics ID
-  goatcounter:
-    id: # fill in your GoatCounter ID
-  umami:
-    id: # fill in your Umami ID
-    domain: # fill in your Umami domain
-  matomo:
-    id: # fill in your Matomo ID
-    domain: # fill in your Matomo domain
-  cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
-
-# Pageviews settings
-pageviews:
-  provider: # now only supports 'goatcounter'
-
-# Prefer color scheme setting.
-theme_mode: dark
-
-# The CDN endpoint for media resources.
-cdn: "https://chirpy-img.netlify.app"
-
-# the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/ovol.png"
-
-# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-social_preview_image:
-
-# boolean type, the global switch for TOC in posts.
-toc: true
-
+# Site Settings
+locale: 'en'
+title: 'WhaleKim의 개발일지'
+title_separator: '-'
+name: 'WhaleKim의 개발일지'
+description: '개발과 창업의 꿈을 꿈꾸고 있는 주니어 개발, 기획자입니다.'
+url: 'https://WhaleKimm.github.io'
+logo: '/assets/images/logo3.png'
+masthead_title: 'Hello WhaleKim!!!'
+baseurl: # the subpath of your site, e.g. "/blog"
+repository: 'WhaleKimm/WhaleKimm.github.io'
+teaser: '/assets/images/sbnu.png'
+# breadcrumbs            : false # true, false (default)
+words_per_minute: 200
 comments:
-  provider: # [disqus | utterances | giscus]
+  provider: 'disqus'
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
-  giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    shortname: www-WhaleKimm-github-io
+  discourse:
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid:
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+staticman:
+  allowedFields: # ['name', 'email', 'url', 'message']
+  branch: # "main"
+  commitMessage: # "New comment."
+  filename: # comment-{@timestamp}
+  format: # "yml"
+  moderation: # true
+  path: # "/_data/comments/{options.slug}" (default)
+  requiredFields: # ['name', 'email', 'message']
+  transforms:
+    email: # "md5"
+  generatedFields:
+    date:
+      type: 'date'
+      options:
+        format: 'iso8601' # (default), "timestamp-seconds", "timestamp-milliseconds"
+reCaptcha:
+  siteKey:
+  secret:
+atom_feed:
+  path: # blank (default) uses feed.xml
+search: true
+search_full_content: true
+search_provider: # lunr (default), algolia, google
+algolia:
+  application_id: # YOUR_APPLICATION_ID
+  index_name: # YOUR_INDEX_NAME
+  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: # true (default), false
+google:
+  search_engine_id: # YOUR_SEARCH_ENGINE_ID
+  instant_search: # false (default), true
+# SEO Related
+google_site_verification:
+bing_site_verification:
+yandex_site_verification:
+naver_site_verification:
 
-assets:
-  self_host:
-    enabled: # boolean, keep empty means false
-    env: # [development | production]
+# Social Sharing
+twitter:
+  sername:
+facebook:
+  username: &facebook 'WhaleKimm'
+  app_id:
+  publisher:
+og_image: '/assets/images/mac_asb.jpg'
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+    - 'https://www.facebook.com/subinium'
 
-pwa:
-  enabled: true
-  cache:
-    enabled: true
-    deny_paths:
-      # - "/example"
+# Analytics
+analytics:
+  provider: 'google' # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id: 'UA-121853166-1'
+    anonymize_ip: # true, false (default)
 
-paginate: 10
+# Site Author
+author:
+  name: 'Oh Seungmin'
+  avatar: '/assets/images/mac_asb.jpg'
+  bio: 'Hello, I am Seungmin.'
+  location: 'Young in city,Korea'
+  email: 'tmdals128551@gmail.com'
+  uri:
+  home: '#' # null (default), "absolute or relative url to link to author home"
+  bitbucket:
+  codepen:
+  dribbble:
+  flickr:
+  facebook: 'subinium'
+  foursquare:
+  github: 'subinium'
+  gitlab:
+  google_plus:
+  keybase:
+  instagram:
+  lastfm:
+  linkedin: 'subin-an-841975110'
+  pinterest:
+  soundcloud:
+  stackoverflow: # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  steam:
+  tumblr:
+  twitter:
+  vine:
+  weibo:
+  xing:
+  youtube: 'https://www.youtube.com/channel/UC8cvg1_oB-IDtWT2bfBC2OQ'
 
-# The base URL of your site
-baseurl: ""
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - '*.sublime-project'
+  - '*.sublime-workspace'
+  - vendora
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: 'utf-8'
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 
-# ------------ The following options are not recommended to be modified ------------------
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: true
 
+# Markdown Processing
 kramdown:
-  footnote_backlink: "&#8617;&#xfe0e;"
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: highlight
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-collections:
-  tabs:
-    output: true
-    sort_by: order
-  app:
-    output: true
-    permalink: /:name
-
-defaults:
-  - scope:
-      path: "" 
-      type: posts
-    values:
-      layout: post
-      comments: true
-      toc: true
-      permalink: /posts/:title/
-  - scope:
-      path: _drafts
-    values:
-      comments: false
-  - scope:
-      path: ""
-      type: tabs
-    values:
-      layout: page
-      permalink: /:title/
-
+# Sass/SCSS
 sass:
-  style: compressed
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+# Outputting
+permalink: /:title/
+paginate: 7 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  #  - jemoji
+  - jekyll-mermaid
+  - jekyll-livereload
+  - jekyll-include-cache
+livereload:
+  enable: true
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  #  - jemoji
+  - jekyll-mermaid
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+# HTML Compression
+# - http://jch.penibelst.de/
 compress_html:
   clippings: all
-  comments: all
-  endings: all
-  profile: false
-  blanklines: false
   ignore:
-    envs: [development]
+    envs: development
 
-exclude:
-  - "*.gem"
-  - "*.gemspec"
-  - docs
-  - tools
-  - README.md
-  - LICENSE
-  - "*.config.js"
-  - package*.json
+# Defaults
+defaults:
+  # _posts
 
-jekyll-archives:
-  enabled: [categories, tags]
-  layouts:
-    category: category
-    tag: tag
-  permalinks:
-    tag: /tags/:name/
-    category: /categories/:name/
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: true
+      share: true
+      related: true
+      toc: true
+      toc-sticky: true
+  # _posts
+
+  - scope:
+      path: ''
+      type: pages
+    values:
+      comments: true
+
+# for Euler-Project diff variable
+diff:
+  - 5
+  - 10
+  - 15
+  - 20
+  - 25
+  - 30
+  - 35
+  - 40
+  - 45
+  - 50
+  - 55
+  - 60
+  - 65
+  - 70
+  - 75
+  - 80
+  - 85
+  - 90
+  - 95
+  - 100
