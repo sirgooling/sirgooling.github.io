@@ -19,7 +19,7 @@ locale: 'en'
 title: 'sirgooling'
 title_separator: '-'
 name: 'sirgooling'
-description: '개발과 창업의 꿈을 꿈꾸고 있는 주니어 개발, 기획자입니다.'
+description: 'cryptopunk'
 url: 'https://sirgooling.github.io'
 logo: '/assets/images/logo3.png'
 masthead_title: 'Hello crypto!!!'
@@ -91,7 +91,7 @@ social:
   type: # Person or Organization (defaults to Person)
   name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - 'https://www.facebook.com/subinium'
+    - 
 
 # Analytics
 analytics:
@@ -102,7 +102,7 @@ analytics:
 
 # Site Author
 author:
-  name: 'Oh Seungmin'
+  name: 'sirgooling'
   avatar: '/assets/images/mac_asb.jpg'
   bio: 'Hello, I am doge.'
   location: 'seoul,Korea'
@@ -113,15 +113,15 @@ author:
   codepen:
   dribbble:
   flickr:
-  facebook: 'subinium'
+  facebook: 
   foursquare:
-  github: 'subinium'
+  github: 'sirgooling'
   gitlab:
   google_plus:
   keybase:
   instagram:
   lastfm:
-  linkedin: 'subin-an-841975110'
+  linkedin: 
   pinterest:
   soundcloud:
   stackoverflow: # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
@@ -131,7 +131,7 @@ author:
   vine:
   weibo:
   xing:
-  youtube: 'https://www.youtube.com/channel/UC8cvg1_oB-IDtWT2bfBC2OQ'
+  youtube: 
 
 # Reading Files
 include:
